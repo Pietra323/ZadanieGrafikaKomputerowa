@@ -8,41 +8,19 @@
 
 ## ShapeController
 
-### Opis
 `ShapeController` to kontroler, który zarządza logiką rysowania i interakcji z kształtami. Używa stanu React do przechowywania informacji o aktualnych kształtach, narzędziach rysunkowych i statusie rysowania.
-
-### Funkcje
-- **useShapeController**: Hook, który zarządza stanem i logiką rysowania.
 
 ## ShapeView
 
-### Opis
 `ShapeView` to komponent, który odpowiada za renderowanie kształtów na płótnie oraz interfejsu użytkownika. Odbiera dane z kontrolera i wizualizuje je na ekranie.
-
-### Funkcje
-- **renderShapes**: Metoda, która iteruje po aktualnych kształtach i rysuje je na płótnie.
-- **handleMouseEvents**: Obsługuje zdarzenia myszy, takie jak kliknięcia i przeciągnięcia, umożliwiając użytkownikowi interakcję z kształtami.
-- **updateTool**: Zmienia aktualne narzędzie rysunkowe na podstawie wyboru użytkownika.
 
 ## ShapeModel
 
-### Opis
 `ShapeModel` to model danych, który przechowuje informacje o kształtach, ich właściwościach (np. kolorze, rozmiarze) oraz metodach do manipulacji nimi.
-
-### Funkcje
-- **addShape**: Dodaje nowy kształt do modelu.
-- **removeShape**: Usuwa kształt na podstawie jego identyfikatora.
-- **updateShape**: Aktualizuje właściwości istniejącego kształtu.
 
 ## App
 
-### Opis
 `App` to główny komponent aplikacji, który łączy wszystkie elementy projektu. Inicjalizuje kontroler, widok i model oraz obsługuje główne przepływy danych.
-
-### Funkcje
-- **initialize**: Inicjalizuje wszystkie komponenty oraz ustawia początkowy stan aplikacji.
-- **render**: Renderuje główny interfejs użytkownika oraz przekazuje odpowiednie dane do `ShapeView`.
-- **handleGlobalEvents**: Obsługuje zdarzenia na poziomie aplikacji, takie jak zmiany w konfiguracji narzędzi.
 
 ## Funkcjonalności aplikacji
 
