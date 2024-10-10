@@ -1,4 +1,3 @@
-// src/controllers/ShapeController.js
 import { useState, useRef } from 'react';
 import {ShapeModel} from "../Models/ShapeModel";
 
@@ -8,7 +7,7 @@ export const useShapeController = () => {
     const [isDragging, setIsDragging] = useState(false);
     const [draggingIndex, setDraggingIndex] = useState(null);
     const dragStart = useRef({ x: 0, y: 0 });
-    const [currentTool, setCurrentTool] = useState(null); // np. 'circle', 'rectangle', 'text'
+    const [currentTool, setCurrentTool] = useState(null);
     const [isDrawing, setIsDrawing] = useState(false);
     const [currentDrawingShape, setCurrentDrawingShape] = useState(null);
     const startPoint = useRef({ x: 0, y: 0 });
@@ -30,7 +29,7 @@ export const useShapeController = () => {
     const handleDrawRectangle = () => selectTool('rectangle');
     const handleDrawEllipse = () => selectTool('ellipse');
     const handleDrawLine = () => selectTool('line');
-    const handleDrawText = () => selectTool('text'); // Nowe narzędzie tekstowe
+    const handleDrawText = () => selectTool('text');
     const startDrawingFreehand = () => selectTool('freehand');
 
     const cancelDrawing = () => {

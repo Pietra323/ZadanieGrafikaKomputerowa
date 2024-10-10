@@ -42,3 +42,7 @@
 
 ### Pisanie tekstu
 - **Pisanie tekstu na canvas**: Użytkownik może dodawać tekst na płótnie.
+
+## Uruchomienie aplikacji
+Aby uruchomić aplikację należy wpisać dwie komendy:
+`npm instal` oraz następnie `npm run start`

@@ -28,7 +28,7 @@ const App = () => {
         textValue,
         handleTextChange,
         handleTextSubmit,
-        handleTextKeyDown, // Nowy handler
+        handleTextKeyDown,
     } = useShapeController();
 
     return (
@@ -43,20 +43,20 @@ const App = () => {
                 onDrawRectangle={handleDrawRectangle}
                 onDrawEllipse={handleDrawEllipse}
                 onDrawLine={handleDrawLine}
-                onDrawText={handleDrawText} // Przekazanie nowego handlera
+                onDrawText={handleDrawText}
                 startDrawingFreehand={startDrawingFreehand}
-                cancelDrawing={cancelDrawing} // Przekazanie nowego handlera
+                cancelDrawing={cancelDrawing}
                 onMouseDown={handleMouseDown}
                 onMouseMove={handleMouseMove}
                 onMouseUp={handleMouseUp}
                 onRightClick={handleRightClick}
                 onWheel={handleWheel}
-                isTextInputVisible={isTextInputVisible} // Przekazanie nowego stanu
-                textInputPosition={textInputPosition} // Przekazanie nowego stanu
-                textValue={textValue} // Przekazanie nowego stanu
-                handleTextChange={handleTextChange} // Przekazanie nowego handlera
-                handleTextSubmit={handleTextSubmit} // Przekazanie nowego handlera
-                handleTextKeyDown={handleTextKeyDown} // Przekazanie nowego handlera
+                isTextInputVisible={isTextInputVisible}
+                textInputPosition={textInputPosition}
+                textValue={textValue}
+                handleTextChange={handleTextChange}
+                handleTextSubmit={handleTextSubmit}
+                handleTextKeyDown={handleTextKeyDown}
             />
         </div>
     );

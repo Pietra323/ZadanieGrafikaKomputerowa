@@ -1,4 +1,3 @@
-// src/views/ShapeView.js
 import React, { useEffect, useRef } from 'react';
 
 const ShapeView = ({
