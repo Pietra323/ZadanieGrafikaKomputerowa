@@ -1,4 +1,3 @@
-// src/models/ShapeModel.js
 export class ShapeModel {
     constructor() {
         this.shapes = [];
