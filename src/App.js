@@ -1,11 +1,15 @@
-// src/App.js
 import React from 'react';
 import {useShapeController} from "./Controllers/ShapeController";
 import ShapeView from "./Views/ShapeView";
 import './Style/ShapeStyle.css';
+import {useCubeController} from "./Controllers/CubeController";
+import CubeView from "./Views/CubeView";
+import {useConeController} from "./Controllers/ConeController";
+import ConeView from "./Views/ConeView";
 
 
 const App = () => {
+    const { rotation: cubeRotation, faces } = useCubeController();
     const {
         shapes,
         currentDrawingShape,
@@ -58,6 +62,16 @@ const App = () => {
                 handleTextSubmit={handleTextSubmit}
                 handleTextKeyDown={handleTextKeyDown}
             />
+            <h1>Ćwiczenie 2 — Przestrzenie barw</h1>
+            <div id="cube-and-cone" style={{display: 'flex', width: '50%', flexDirection: 'row'}}>
+                <div id="cube" style={{flex: 1}}>
+                    <CubeView/>
+                </div>
+                <div id="cone" style={{flex: 1}}>
+                    <ConeView/>
+                </div>
+            </div>
+
         </div>
     );
 };

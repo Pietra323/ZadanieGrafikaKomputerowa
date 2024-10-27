@@ -3,6 +3,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
+div{
+    backface-visibility: hidden;
+}
 
 .button-28 {
     appearance: none;
@@ -28,7 +31,7 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 8em;
+    width: 7em;
     will-change: transform;
 }
 
