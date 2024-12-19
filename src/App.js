@@ -8,6 +8,8 @@ import { useConeController } from "./Controllers/ConeController";
 import ConeView from "./Views/ConeView";
 import FormatView from './Views/FormatView';
 import ImageView from "./Views/ImageView";
+import BezierView from "./Views/BezierView";
+import BezierCurveView from "./Views/BezierView";
 
 const App = () => {
     const { rotation: cubeRotation, faces } = useCubeController();
@@ -35,6 +37,7 @@ const App = () => {
         handleTextSubmit,
         handleTextKeyDown,
     } = useShapeController();
+
 
     return (
         <div>
@@ -78,6 +81,9 @@ const App = () => {
             <ImageView/>
             <h4>Najlepiej zadziała filtr Gaussa</h4>
             <h5>Aby wykonać testy należy w katalogu "zadanie" wpisać: npm test</h5>
+            <h1>Ćwiczenie 6 — Krzywa Béziera</h1>
+            <BezierCurveView/>
+            <h4>Część zadania z przekształcaniem mam zaimplementowany w zadaniu 1. Proszę sprawdzić</h4>
         </div>
     );
 };
